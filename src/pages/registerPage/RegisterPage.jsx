@@ -283,7 +283,7 @@ const TeamDetails = (props) => {
     <>
       <Card className={classes.team_related}>
         {
-          <Button variant="contained" color="primary" onClick={addmemberHandler} fullWidth disabled={count > props.limit} className={classes.addteam}>
+          <Button variant="contained" color="primary" onClick={addmemberHandler} fullWidth disabled={count >= props.limit} className={classes.addteam}>
             Add team Member Details
           </Button>
         }
