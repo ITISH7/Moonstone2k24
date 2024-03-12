@@ -226,9 +226,7 @@ const TeamDetails = (props) => {
     setadharnumber(event.target.value);
   };
   const addmemberHandler = () => {
-    setcount((prev) => {
-      return prev + 1;
-    });
+    
     SetCartIsShown(true);
   };
   const handleNext = () => {
@@ -263,6 +261,9 @@ const TeamDetails = (props) => {
           const teammember = TeamMember.concat({
             name: MemberName,
             aadhar_no: adharnumber,
+          });
+          setcount((prev) => {
+            return prev + 1;
           });
           setTeamMember(teammember);
           SetCartIsShown(false);
