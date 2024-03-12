@@ -12,7 +12,7 @@ const Cultural = () => {
     const [getculturalData, setGetCulturalData] = useState([]);
     useEffect(() => {
         axios
-            .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+            .get("https://moonstone-backend-new.onrender.com/events/alleventData")
             .then((res) => {
                 console.log(res.data);
                 setGetCulturalData(res.data);

@@ -11,7 +11,7 @@ const Night = () => {
     const [getNightData, setGetNightData] = useState([]);
     useEffect(() => {
         axios
-            .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+            .get("https://moonstone-backend-new.onrender.com/events/alleventData")
             .then((res) => {
                 console.log(res.data);
                 setGetNightData(res.data);

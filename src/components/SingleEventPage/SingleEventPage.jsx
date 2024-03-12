@@ -11,7 +11,7 @@ const SingleEventPage = ({ eventData }) => {
   const [getdata, setgetdata] = useState([]);
   console.log(eventId);
   useEffect(() => {
-    axios.get(`https://moonstone-backend-9dhg.onrender.com/events/${eventId}`).then((res) => {
+    axios.get(`https://moonstone-backend-new.onrender.com/events/${eventId}`).then((res) => {
       console.log(res.data);
       setgetdata(res.data);
     });

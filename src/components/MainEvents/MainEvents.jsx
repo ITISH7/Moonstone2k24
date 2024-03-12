@@ -21,7 +21,7 @@ const MainEvents = () => {
   const [getculturalData, setGetCulturalData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+      .get("https://moonstone-backend-new.onrender.com/events/alleventData")
       .then((res) => {
         console.log(res.data);
         setGetCulturalData(res.data);
@@ -39,7 +39,7 @@ const MainEvents = () => {
   const [getSportsData, setGetSportsData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+      .get("https://moonstone-backend-new.onrender.com/events/alleventData")
       .then((res) => {
         console.log(res.data);
         setGetSportsData(res.data);
@@ -56,7 +56,7 @@ const MainEvents = () => {
   const [getTechoData, setGetTechnoData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+      .get("https://moonstone-backend-new.onrender.com/events/alleventData")
       .then((res) => {
         console.log(res.data);
         setGetTechnoData(res.data);
@@ -74,7 +74,7 @@ const MainEvents = () => {
   const [getNightData, setGetNightData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://moonstone-backend-9dhg.onrender.com/events/alleventData")
+      .get("https://moonstone-backend-new.onrender.com/events/alleventData")
       .then((res) => {
         console.log(res.data);
         setGetNightData(res.data);

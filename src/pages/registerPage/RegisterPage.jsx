@@ -252,7 +252,7 @@ const TeamDetails = (props) => {
       alert("please add correct aadhar number and  member name");
     } else {
       axios
-        .post("https://moonstone-backend-9dhg.onrender.com/registration/checkaadhar", {
+        .post("https://moonstone-backend-new.onrender.com/registration/checkaadhar", {
           eventid: props.eventid,
           aadhar_no: adharnumber,
         })
@@ -426,7 +426,7 @@ const Register = () => {
       finalstep: finalstep,
     });
     axios
-      .post("https://moonstone-backend-9dhg.onrender.com/registration/checkaadhar", {
+      .post("https://moonstone-backend-new.onrender.com/registration/checkaadhar", {
         eventid: eventid,
         aadhar_no: data.aadhar_no,
       })
@@ -500,7 +500,7 @@ const Register = () => {
     });
     if (Teamdata.length === 0) {
       axios
-        .post("https://moonstone-backend-9dhg.onrender.com/registration/register", {
+        .post("https://moonstone-backend-new.onrender.com/registration/register", {
           email: mergedata.email,
           name: mergedata.name,
           phone_no: mergedata.phone_no,
@@ -526,7 +526,7 @@ const Register = () => {
         });
     } else {
       axios
-        .post("https://moonstone-backend-9dhg.onrender.com/registration/register", {
+        .post("https://moonstone-backend-new.onrender.com/registration/register", {
           email: mergedata.email,
           name: mergedata.name,
           phone_no: mergedata.phone_no,
@@ -557,7 +557,7 @@ const Register = () => {
   const [qr, setqr] = useState("");
   useEffect(() => {
     axios
-      .get(`https://moonstone-backend-9dhg.onrender.com/events/${eventid}`)
+      .get(`https://moonstone-backend-new.onrender.com/events/${eventid}`)
       .then((res) => {
         setqr(res.data.event_qr_link);
         console.log(res.data.event_qr_link);
